@@ -1,44 +1,143 @@
-/* Style for Company Info */
-#company-info {
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+}
+
+header {
+  background-color: #343a40;
+  padding: 10px 20px;
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+
+nav a:hover {
+  background-color: #007bff;
+  border-radius: 5px;
+}
+
+#logo-container {
   text-align: center;
+  padding: 15px 0;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #343a40;
+}
+
+#logo {
+  max-width: 200px;
+  margin-top: 10px;
+}
+
+main {
+  padding: 20px;
+}
+
+/* Section for Mission, Contact Us, About Us, Store */
+section {
+  margin-bottom: 30px;
+}
+
+section h2 {
+  font-size: 1.5rem;
+  color: #343a40;
+  margin-bottom: 15px;
+}
+
+section p {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Contact Us Form */
+form {
   margin-top: 20px;
 }
 
-#company-info #logo {
+input[type="email"] {
+  padding: 8px;
+  font-size: 1rem;
+  margin-right: 10px;
   width: 200px;
-  height: auto;
-  margin: 10px 0;
-}
-
-/* Style for Contact and Newsletter Sections */
-#contact, #newsletter {
-  margin: 20px auto;
-  padding: 20px;
-  background-color: #f9f9f9;
-  width: 80%;
-  max-width: 600px;
-  border-radius: 10px;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-input, textarea, button {
-  padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
 
 button {
-  background-color: #333;
+  padding: 8px 15px;
+  font-size: 1rem;
+  background-color: #28a745;
   color: white;
   border: none;
-  cursor: pointer;
+  border-radius: 5px;
 }
 
 button:hover {
-  background-color: #555;
+  background-color: #218838;
+}
+
+/* Store Items Section */
+#store-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.product-card {
+  background-color: white;
+  padding: 20px;
+  margin: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  text-align: center;
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.product-card p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.product-card button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.product-card button:hover {
+  background-color: #0056b3;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #343a40;
+  color: white;
+}
+
+footer p {
+  margin: 0;
 }
