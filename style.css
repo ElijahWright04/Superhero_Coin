@@ -1,0 +1,44 @@
+/* Style for Company Info */
+#company-info {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#company-info #logo {
+  width: 200px;
+  height: auto;
+  margin: 10px 0;
+}
+
+/* Style for Contact and Newsletter Sections */
+#contact, #newsletter {
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, textarea, button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
